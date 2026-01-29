@@ -108,7 +108,7 @@
               
               // 地図をルートに合うように調整
               const bounds = routeLayer.getBounds();
-              map.fitBounds(bounds); 
+             
       
     }
     // 地図にルートを追加
@@ -124,6 +124,7 @@
                 })
                     map.addLayer(line)
                     LayerControl.addOverlay(line, "防災街歩きルート")
+                     map.fitBounds(line); 
             });
         </script>
     </body>
