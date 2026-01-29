@@ -114,7 +114,7 @@
     // 地図にルートを追加
     addRouteLayer();
     // ラインレイヤーを作成
-            fetch("./Route.geojson") // ルートデータの非同期読み込み
+            fetch("./websystem.geojson") // ルートデータの非同期読み込み
                 .then((response) => response.json())
                 .then((data) => {
                 var line = L.geoJSON(data, {
